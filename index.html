@@ -1,124 +1,67 @@
-<!DOCTYPE html>
-<html lang="uk">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/style.css">
+@import url('https://fonts.googleapis.com/css2?family=Fahkwang:wght@200;300;500&family=Roboto:ital,wght@1,100&display=swap');
+
+
+body {background-color: rgb(86, 159, 177);
+	font-family: 'Fahkwang', sans-serif;
+	font-weight: 300;
+	font-size: 20px;}
+
+a {font-size: 20px;
+line-height: 3;
+text-transform: lowercase;
+text-decoration: underline;
+font-weight: 900;
+}	
+
+h1 {font-size: 30px;
+	text-transform:uppercase ;
 	
-	<title>lesson5</title>
-</head>
+}
 
-<body>
+h2 {text-align: center;
 
+font-size: 30px;
+text-shadow: 1px 2px 5px rgb(235, 21, 85);
+text-transform:uppercase ;
+font-family: 'Fahkwang', sans-serif;
+font-weight: 800;
+}
 
-<!--------------------------------------------- шапка ---------------------------------------------------->
-	<header> 
-		<h1> Підготовка тижневого звіту по активаціям та b2c продажам</h1>
-		<a href="#b2c"> В2С</a> 
-		<a href="#aktivation">активації</a> 
-	</header>
+p, ul {
+	padding: 20px;
+}
 
-
-<main>
-
-<!--------------------------------------------загальний блок -------------------------------------------------->
-
-<div class="blok"> 
-
-	<p> Відкриваємо в адмінці вкладку "аналітика" та встановлюємо дату і час (дивись зображення):</p>
-
-
-	<img src="img/one.png" alt="перша сторінка аналітики">
-
-	<p> Всі наступні вкладки залишаємо по замовчуванню, як на фото: </p>
-
-	<img src="img/two.png" alt="друга сторінка аналітики">
-	<img src="img/tree.png" alt="третя сторінка аналітики">
-
-</div>
-
-
-<!---------------------------------------------блок активації ---------------------------------------------------->
-
-
-<div class="aktivation-filtr ">
-
-	<h2 id="aktivation"> фільтри для активацій</h2>
-
-	<p>Виставляємо фільтри для розрахунку активації в розділі "источник заказа"та натискаємо кнопку "відобразити" </p> 
+header {
+	position: sticky;
+	top: 0;
+	min-height: 2em;
 	
-	<img src="img/four.png" alt="фільтр розрахунку активацій"> <br>
-
-	<ul>
-		<li>оплата сертифікатами</li>
-		<li>активація АРІ</li>
-		<li>активація ПЛ</li>
-	</ul>
-
-		<p> Виручка, яка нас цікавить, знаходиться в стовпчику "сума з урахуванням знижки та націнки, грн"</p> 
-
-		<img src="img/six.png" alt="виручка по активаціям">
-</div>
-
-<!---------------------------------------------МАРЖА активацій---------------------------------------------------->
-
-<div class="margin-aktivation">
-
-	<h2> розрахунок маржі активацій </h2>
-
-	<p> Маржу без НДС потрібно поділити на суму УС без НДС,після чого, число, яке ми отримали помножити на 100<br>(Маржа без НДС / Сума УС без НДС)* 100 </p>
-
-	<img src="img/aktivation.png" alt="розрахунок маржі активацій">
-
-	<p> Щоб визначити топ-з по активаціям, потрібно піднятись вгору та на стовпчику "сума по номіналам" натиснути стрілочку вниз </p>
-		<img src="img/seven.png" alt="розрахунок маржі активацій">
-</div>
-
-
-<!----------------------------------------------------блок B2C------------------------------------------------------------>
-
-
-<div class="b2c-filtr ">
-	<h2 id="b2c">фільтри для b2c</h2>
+	background-color:rgb(245, 248, 42);
+	border-radius: 5px;
+	text-align: center;
 	
-	<p>Виставляємо фільтри для розрахунку B2C в розділі "источник заказа"та натискаємо кнопку "відобразити":  </p>
-	<img src="img/eight.png" alt="фільтр для b2c">
+	line-height: 1.2;
+	padding: 20px;
+	margin-bottom: 30px;
+	letter-spacing: 10px;
+	
+	}
 
-	<ul>
-		<li>сайт</li>
-	</ul>
+.blok {margin-bottom: 40px;
+	padding: 20px;
+	line-height: 20px;
+	}
 
-	<p> Виручка, яка нас цікавить, знаходиться в стовпчику "сума з урахуванням знижки та націнки, грн":</p> 
-		<img src="img/nine.png" alt="виручка по b2c">
-</div>
+.aktivation-filtr,
+.b2c-filtr
+ {background-color: rgb(245, 248, 42);
+	margin-bottom: 40px;
+	padding: 40px;
+}
+.margin-aktivation,
+.b2c-aktivation {
+	margin-bottom: 40px;
+	padding: 40px;
+	line-height: 2;
 
-
-<!----------------------------------------------------МАРЖА B2C------------------------------------------------------------>
-
-
-<div class="b2c-aktivation">
-	<h2>розрахунок маржі b2c</h2>
-
-	<p>Від суми з урахуванням знижки та націнки з ур. НДС, відняти суму з урахуванням знижки і націнки на УС.<br>
-	Маржу без НДС потрібно поділити на отриману суму, та помножити на сто. 
-	</p>
-
-	<p>Маржа без НДС / 
-	(Сума з урахуванням знижки та націнки з ур. НДС - Сумма з урахуванням знижки і націнки на УС) * 100
-	</p>
-
-	<img src="img/aktivation.png" alt="розрахунок маржі активацій">
-
-	<p>Щоб визначити топ-з по активаціям, потрібно піднятись вгору та на стовпчику "сума по номіналам" натиснути стрілочку вниз: </p>
-	<img src="img/ten.png" alt="розрахунок маржі b2c">
-
-</div>
-
-	</main>
-	<footer> 
-
-	</footer>
-</body>
-</html>
+}
