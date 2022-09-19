@@ -21,8 +21,8 @@ font-family: "Larsseit", "lato";}
 
 
 a:link,
-
-
+a:visited{text-decoration:none;}
+a:hover {text-decoration: none;}
 
 input,
 textarea,
