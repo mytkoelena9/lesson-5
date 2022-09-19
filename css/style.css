@@ -6,12 +6,7 @@ body {background-color: rgb(86, 159, 177);
 	font-weight: 300;
 	font-size: 20px;}
 
-a {font-size: 20px;
-line-height: 3;
-text-transform: lowercase;
-text-decoration: underline;
-font-weight: 900;
-}	
+
 
 h1 {font-size: 30px;
 	text-transform:uppercase ;
@@ -29,6 +24,16 @@ font-weight: 800;
 
 p, ul {
 	padding: 20px;
+}
+
+.button {
+    background-color:rgb(86, 159, 177);
+    font-size: 30px;
+    line-height: 3;
+    border-radius: 10px;
+    text-align: center;
+    padding: 5px;
+    
 }
 
 header {
@@ -64,4 +69,15 @@ header {
 	padding: 40px;
 	line-height: 2;
 
+}
+
+.blank {
+    background-color: rgb(243, 250, 31);
+    width: 150px;
+    border-radius: 10px;
+    text-align: center;
+    margin-left: 1000px;
+    font-size: 25px;
+    padding: 5px;
+    margin-bottom: 20px;
 }
