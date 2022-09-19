@@ -33,6 +33,7 @@ p, ul {
     border-radius: 10px;
     text-align: center;
     padding: 5px;
+    box-shadow: 4px 6px 5px rgb(35, 32, 33);
     
 }
 
@@ -72,6 +73,7 @@ header {
 }
 
 .blank {
+    box-shadow: 4px 6px 5px rgb(28, 27, 27);
     background-color: rgb(243, 250, 31);
     width: 150px;
     border-radius: 10px;
