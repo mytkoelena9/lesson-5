@@ -26,6 +26,8 @@ p, ul {
 	padding: 20px;
 }
 
+img {max-width: 1200px;}
+
 .button {
     background-color:rgb(86, 159, 177);
     font-size: 30px;
